@@ -73,7 +73,6 @@ function set_task(event){  //runs function when the button is clicked
 
     add_task_to_storage(task_set);
     display_function();
-
 }
 
 //renders tasks into the DOM
@@ -93,11 +92,10 @@ function display_function(){
 
      let new_task_display_content =             
         `  
-        <h4>Your Tasks:</h4>
         <p>${task_set[i].getTask_input}</p>  
-        <h4>Due Date:</h4>
-        <p>${task_set[i].getTask_due_date}
-        
+        <p>${task_set[i].getTask_due_date}</p>
+        <button>Edit</button>
+        <button>Delete</button>
         `;
 
         new_task_display.innerHTML = new_task_display_content;

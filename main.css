@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'fira sans' sans-serif;
+}
+:root {
+    --dark: #374151;
+    --darker: #0c111c;
+    --orange: rgb(245, 133, 14);
+    --gray: #6B7280;
+    --darkest: #
+    
+}
+
+body  {
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(/Images/blue.jpg);
+    color: white;
+}
+
+
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+    margin-left: 30%;
+}
+
+#task_form {
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+
+}
+
+#task-input {
+    flex: 1 1 0%;
+    background-color: #071127;
+    padding: 1rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+    color: var(--gray);
+    margin-left: 1rem;
+    font-size: 1.25rem;
+}
+
+#task-due-date {
+    flex: auto;
+    background-color: #071127;
+    padding: 1rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    color: var(--gray);
+    margin-right: 0rem;
+    font-size: 1.25rem;
+}
+
+#task-due-date::icon {
+    color: var(--gray);
+}
+
+button {
+    color: var(--orange);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--orange), var(--gray));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+main {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*div h2 {
+   */
+
+div  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    background-color: #071127;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    justify-content: space-around;
+   /* padding-right: 0.5rem;
+    padding-left: 0.5rem;*/
+
+}
+
+div p {
+    color: peachpuff;
+    font-size: 1.125rem;
+    width: auto;
+    display: block;
+    transition: 0.4s;
+    margin-left: 1rem;
+}
+
+div button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1 125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+div button:hover {
+    opacity: 0.6;
+}
+
+div button:active {
+    opacity: 0.4;
+}

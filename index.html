@@ -13,30 +13,35 @@
 
 <body onload = "display_function()">
 
-    <div>
+    
         <!--Input task field-->
     <header>
-        <form id = "taskForm">
-            <h1>To Do App</h1>
+        <h1>TO DO APP</h1>
+
+        <form id = "task_form">
+            
             <input id = "task-input" type="text" placeholder = "Set New Task" required>
             <input id = "task-due-date" type = "date" required>
-            <button type = "submit" onclick = "set_task(event)">Add Task</button>
-
+            <button id = "task-submit" type = "submit" onclick = "set_task(event)">Add Task</button>
+            
         </form>
+
     </header>
 
 <!--Output task field-->
     <main>
         <section>
-          
-
+        
+            
             <div id = "tasks_display">
+                
+            
 
             </div>
 
         </section>
     </main>
-    </div>
+    
 
 
 
