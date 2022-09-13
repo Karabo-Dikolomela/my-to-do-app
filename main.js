@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
     //get username from local storage else set as empty string
     const username = localStorage.getItem('username') || '';
 
-    nameInput.value = username;//pull username from local storage and assign as value of nameImput
+    nameInput.value = username;//pull username from local storage and assign as value of nameInput
 
     //Updates the user name
     nameInput.addEventListener('change', e => {
@@ -72,8 +72,10 @@ function DisplayTodos () {
         //assign a class of personal or business in the span created tag
         if (todo.category == 'personal') {
             span.classList.add('personal');
+        } else if(todo.category == 'business') {
+            span.classList.add('business');
         } else {
-            span.classList.add('business')
+            span.classList.add('school')
         }
 
         content.classList.add('todo-content');
