@@ -10,17 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/src/Css/main.css">
 </head>
 <body>
     <main class="app">
-
+<!--Username input field for greeting-->
         <section class = "greeting">
             <h2 class="title">
                 whats's up, <input type = "text" id = "name" placeholder = "Name here">
             </h2>
         </section>
-
+        
+<!--Todo input form-->
         <section class="create-todo">
             <h3>CREATE A TODO</h3>
             <form id="new-todo-form">
@@ -52,7 +53,8 @@
                 <input type = "submit" value ="Add todo">
             </form>
         </section>
-
+        
+<!--ToDo Output and display-->
         <section class="todo-list">
            <h3>TODO LIST</h3>
            <div class ="list" id ="todo-list">
@@ -62,7 +64,7 @@
 
     </main>
     
-    <script src="main.js"></script>
+    <script src="/src/Js/main.js"></script>
 </body>
 
 </html> 
